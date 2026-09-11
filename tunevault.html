@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TuneVault — Case Study | Shams Yar-Adua</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Shams Yar-Adua</a>
+    <ul class="nav-links">
+      <li><a href="tunevault.html" class="current">TuneVault</a></li>
+      <li><a href="gamemind.html">GameMind</a></li>
+      <li><a href="gloveworks.html">GloveWorks</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="spread-tag tag-tv">Mobile app · Music</span>
+    <h1>TuneVault</h1>
+    <p class="lede">A pre-order and streaming app that lets fans support several artists in one checkout, and actually see what happened to their order afterward.</p>
+    <div class="cs-meta">
+      <div><div class="k">Role</div><div class="v">UX Designer &amp; Researcher</div></div>
+      <div><div class="k">Platform</div><div class="v">Mobile (iOS-style) + Desktop</div></div>
+      <div><div class="k">Tools</div><div class="v">Figma, Google Slides</div></div>
+      <div><div class="k">Focus</div><div class="v">Research → Hi-Fi Prototype</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The problem</h2>
+    </div>
+    <p class="pull-quote">"Fans who want to support multiple artists at once are forced to repeat a full checkout for every single album, with no way to track orders once placed."</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What research actually said</h2>
+      <p>I interviewed four TuneVault users — a cybersecurity analyst, a college student, a project management intern, and a tattoo artist with a following — to see how they discover and pre-order music today.</p>
+    </div>
+    <p style="color: var(--text-muted); max-width: 62ch;">Going in, I assumed speed alone would drive pre-order decisions. It didn't. Convenience mattered, but so did feeling recognized — people wanted perks and ways to show support publicly. And once an order was placed, nobody had a reliable way to check on it, which left real excitement about a purchase turning into quiet disconnection.</p>
+
+    <div class="four-col" style="margin-top: 2.5rem;">
+      <div class="card">
+        <h3>Fragmented checkout</h3>
+        <p>Pre-ordering meant re-entering payment details and repeating the flow for every artist.</p>
+      </div>
+      <div class="card">
+        <h3>No order tracking</h3>
+        <p>No way to see real-time status once a pre-order was placed.</p>
+      </div>
+      <div class="card">
+        <h3>No loyalty recognition</h3>
+        <p>Frequent supporters got no acknowledgment for pre-ordering often.</p>
+      </div>
+      <div class="card">
+        <h3>No sharing tools</h3>
+        <p>Fans with a following had no built-in way to promote a pre-order.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Meet Monty</h2>
+      <p>27, an audio engineer and self-described collector in Toronto — the persona every decision below traces back to.</p>
+    </div>
+    <div class="persona-grid">
+      <img src="assets/tv_persona.jpg" alt="Persona card for Monty Williams, 27, audio engineer in Toronto">
+      <div>
+        <p class="pull-quote" style="font-size: 1.3rem;">"I shouldn't have to place three separate orders just to support an artist's multi-format album drop."</p>
+        <ul class="persona-facts">
+          <li><b>Needs</b> — to pre-order from several artists in one sitting, not one checkout per artist.</li>
+          <li><b>Wants</b> — an at-a-glance view of what's shipped, digital, or still pending.</li>
+          <li><b>Frustration</b> — bulk, loyal pre-ordering feels transactional, not rewarding.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Monty's journey, mapped</h2>
+      <p>Five stages, from discovering a release to checking his collection weeks later — this is where the cart, the reward moment, and the Library all came from.</p>
+    </div>
+    <div class="shot">
+      <img src="assets/tv_journey.jpg" alt="User journey map for Monty across five stages of the pre-order flow">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Information architecture</h2>
+      <p>Ten screens, one continuous loop — discover, decide, confirm, and come back to check on it.</p>
+    </div>
+    <div class="four-col" style="grid-template-columns: repeat(5, 1fr);">
+      <div class="card"><h3 style="font-size:1rem;">Home</h3><p>New releases, upcoming drops</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Browse / Search</h3><p>Genre and artist discovery</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Album Detail</h3><p>Track list, pre-order action</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Cart</h3><p>Multi-artist checkout</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Confirm</h3><p>Order summary, shipping</p></div>
+    </div>
+    <div class="four-col" style="grid-template-columns: repeat(5, 1fr); margin-top: 1.4rem;">
+      <div class="card"><h3 style="font-size:1rem;">Complete</h3><p>Confirmation, auto-advance</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Reward</h3><p>Recognition + share moment</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Library</h3><p>Status tracking, all orders</p></div>
+      <div class="card"><h3 style="font-size:1rem;">Profile</h3><p>Account, settings</p></div>
+      <div class="card" style="opacity:0.5;"><h3 style="font-size:1rem;">↻ back to Home</h3><p>Closes the loop</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>From paper to pixels</h2>
+      <p>Core navigation — search, genre browsing, pre-order, new releases — got sketched across a few directions before landing on a persistent bottom nav.</p>
+    </div>
+    <div class="two-col">
+      <div class="shot">
+        <img src="assets/tv_paper_wireframes.jpg" alt="Paper wireframe sketches of the TuneVault navigation">
+        <div class="shot-caption">Paper wireframes — early navigation exploration</div>
+      </div>
+      <div class="shot">
+        <img src="assets/tv_digital_wireframe.jpg" alt="Digital wireframe of the TuneVault home screen">
+        <div class="shot-caption">Digital wireframe — Home screen content hierarchy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What testing changed</h2>
+      <p>Two rounds of feedback on the cart and reward flow specifically, since those were the two features added directly in response to research.</p>
+    </div>
+    <div class="three-col">
+      <div class="finding-card">
+        <span class="label friction-label">Round 1</span>
+        <h3>Cart wasn't discoverable</h3>
+        <p>Users didn't notice they could queue more than one album before checkout.</p>
+        <span class="label fix-label">Round 2 fix</span>
+        <p>A persistent cart icon in the header made the multi-item flow obvious.</p>
+      </div>
+      <div class="finding-card">
+        <span class="label friction-label">Round 1</span>
+        <h3>No way to check an order</h3>
+        <p>After confirming, there was no clear way to see what happened next.</p>
+        <span class="label fix-label">Round 2 fix</span>
+        <p>A new Library tab closed the post-order tracking gap entirely.</p>
+      </div>
+      <div class="finding-card">
+        <span class="label friction-label">Round 1</span>
+        <h3>Reward felt disconnected</h3>
+        <p>Some expected recognition right after adding to cart, not after confirming.</p>
+        <span class="label fix-label">Round 2 fix</span>
+        <p>Kept the Reward screen post-confirmation, but reactions were still positive overall.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Before and after</h2>
+      <p>The two screens usability testing changed the most.</p>
+    </div>
+    <div class="before-after" style="margin-bottom: 3rem;">
+      <div>
+        <div class="shot-label">Before — Home</div>
+        <div class="shot"><img src="assets/tv_home_lofi.png" alt="Low-fidelity Home screen wireframe"></div>
+      </div>
+      <div>
+        <div class="shot-label">After — Home</div>
+        <div class="shot"><img src="assets/tv_home_hifi.png" alt="High-fidelity Home screen with persistent cart icon"></div>
+      </div>
+    </div>
+    <div class="before-after">
+      <div>
+        <div class="shot-label">Before — Album Detail</div>
+        <div class="shot"><img src="assets/tv_album_lofi.png" alt="Low-fidelity Album Detail wireframe"></div>
+      </div>
+      <div>
+        <div class="shot-label">After — Album Detail</div>
+        <div class="shot"><img src="assets/tv_album_hifi.png" alt="High-fidelity Album Detail screen"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The final screens</h2>
+      <p>Cart, Reward, and Library — the three features that came directly out of the four pain points above.</p>
+    </div>
+    <div class="mobile-gallery">
+      <div class="shot"><img src="assets/tv_cart_hifi.png" alt="TuneVault cart screen"><div class="shot-caption">Cart</div></div>
+      <div class="shot"><img src="assets/tv_reward_hifi.png" alt="TuneVault reward screen"><div class="shot-caption">Reward</div></div>
+      <div class="shot"><img src="assets/tv_library_hifi.png" alt="TuneVault library screen with status badges"><div class="shot-caption">Library</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Takeaways &amp; what's next</h2>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h3>What I learned</h3>
+        <p>A single-item "one-click" checkout looks efficient on paper, but real fans wanted to support several artists in one sitting. Small early assumptions can quietly shape an entire product's information architecture.</p>
+      </div>
+      <div class="card">
+        <h3>Next steps</h3>
+        <p>Run a real usability study on the current prototype, design the remaining screens (Browse, Search, Profile) at full fidelity, and replace placeholder gradient art with real album covers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="next-cta">
+  <div class="wrap">
+    <h2>Next up: GameMind, a very different design problem.</h2>
+    <a href="gamemind.html" class="btn btn-primary">View the GameMind case study</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span style="color: var(--text-muted); font-size: 0.95rem;">syaradua@gmail.com</span>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gamemind.html">GameMind</a></li>
+      <li><a href="gloveworks.html">GloveWorks</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

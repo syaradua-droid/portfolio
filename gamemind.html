@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameMind — Case Study | Shams Yar-Adua</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Shams Yar-Adua</a>
+    <ul class="nav-links">
+      <li><a href="tunevault.html">TuneVault</a></li>
+      <li><a href="gamemind.html" class="current">GameMind</a></li>
+      <li><a href="gloveworks.html">GloveWorks</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="spread-tag tag-gm">Mobile + web · Social good</span>
+    <h1>GameMind</h1>
+    <p class="lede">Youth athletics equity &amp; mental wellness — a mobile app for athletes and a coordinator portal for the adults trying to help them, built around one hard constraint: nothing could feel like it was drawing attention to a kid who's struggling.</p>
+    <div class="cs-meta">
+      <div><div class="k">Role</div><div class="v">Lead UX Researcher &amp; Designer</div></div>
+      <div><div class="k">Timeline</div><div class="v">4 weeks</div></div>
+      <div><div class="k">Tools</div><div class="v">Figma, FigJam, Miro</div></div>
+      <div><div class="k">Platform</div><div class="v">Mobile app + responsive web</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The problem</h2>
+    </div>
+    <p class="pull-quote">"Low-income youth athletes face steep equipment costs and a culture of silence around competitive stress and burnout — and the adults trying to help them have no central system to do it."</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Two people, two very different jobs to be done</h2>
+    </div>
+    <div class="two-col">
+      <div class="card" style="padding: 2rem;">
+        <h3 style="font-size: 1.3rem;">Marcus Chen, 16</h3>
+        <p style="margin-bottom: 1rem; color: var(--gm-accent); font-size: 0.9rem; font-weight: 600;">The Determined Competitor</p>
+        <p>"I shouldn't have to choose between new shoes and helping with rent — but nobody talks about how much pressure we're actually under."</p>
+      </div>
+      <div class="card" style="padding: 2rem;">
+        <h3 style="font-size: 1.3rem;">Coach Kendra Vance, 28</h3>
+        <p style="margin-bottom: 1rem; color: var(--gm-accent); font-size: 0.9rem; font-weight: 600;">The Overextended Advocate</p>
+        <p>"I can teach a kid how to shoot a free throw. I can't magically produce a pair of shoes or a sports psychologist out of thin air."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Marcus's emotional arc</h2>
+      <p>From silent hesitation to confident pickup — every touchpoint in the app had to actively lower the emotional barrier to asking for help.</p>
+    </div>
+    <div class="four-col">
+      <div class="card"><h3 style="font-size: 1rem;">1. Recognize the need</h3><p><em>Hesitant &amp; isolated</em></p></div>
+      <div class="card"><h3 style="font-size: 1rem;">2. Request support</h3><p><em>Cautiously relieved</em></p></div>
+      <div class="card"><h3 style="font-size: 1rem;">3. Receive &amp; connect</h3><p><em>Grateful, still guarded</em></p></div>
+      <div class="card"><h3 style="font-size: 1rem;">4. Sustain &amp; reflect</h3><p><em>Confident, paying it forward</em></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What existed already — and where it fell short</h2>
+    </div>
+    <div class="four-col">
+      <div class="card"><h3>Good Sports</h3><p>No self-serve request flow — relies on partner orgs, not the athlete directly.</p></div>
+      <div class="card"><h3>TeamSnap</h3><p>Strong logistics, zero equity or wellness features.</p></div>
+      <div class="card"><h3>Calm</h3><p>Generic wellness content, not athlete- or sport-specific.</p></div>
+      <div class="card"><h3>DonorsChoose</h3><p>Proven donor-matching model, built for classrooms not sports.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Sketch first</h2>
+      <p>Before any digital wireframing, the Equipment Request flow got sketched on paper — the layout below carried through to every build after it.</p>
+    </div>
+    <div class="shot" style="max-width: 340px;">
+      <img src="assets/gm_lofi_sketch.jpg" alt="Hand-sketched paper wireframe of the Equipment Request form">
+      <div class="shot-caption">Low-fi wireframe — Equipment Request form</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Usability testing, and what it actually changed</h2>
+      <p>5 youth athletes and 3 coordinators, unmoderated remote sessions plus follow-up interviews. These three fixes are the direct result — and they're live in the screens below, not just described here.</p>
+    </div>
+    <div class="three-col">
+      <div class="finding-card">
+        <span class="label friction-label">Friction</span>
+        <h3>Privacy hesitation</h3>
+        <p>Athletes paused at submit, afraid their coach would see the request.</p>
+        <span class="label fix-label">Fix</span>
+        <p>A "100% Confidential" badge now sits directly above the submit button.</p>
+      </div>
+      <div class="finding-card">
+        <span class="label friction-label">Friction</span>
+        <h3>No guidance after a low score</h3>
+        <p>Athletes wanted support when they logged low mental readiness.</p>
+        <span class="label fix-label">Fix</span>
+        <p>Scores below 5 auto-trigger a "Recommended Mental Reset" prompt.</p>
+      </div>
+      <div class="finding-card">
+        <span class="label friction-label">Friction</span>
+        <h3>Unclear pickup process</h3>
+        <p>Athletes didn't know what documentation was needed at pickup.</p>
+        <span class="label fix-label">Fix</span>
+        <p>A QR verification pass is now built directly into the status tracker.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The athlete app</h2>
+      <p>Five screens, one continuous flow — from checking in, to requesting gear privately, to seeing exactly where that request stands.</p>
+    </div>
+    <div class="mobile-gallery">
+      <div class="shot"><img src="assets/gm_home_normal.png" alt="Home dashboard, normal readiness state"><div class="shot-caption">Home — normal state</div></div>
+      <div class="shot"><img src="assets/gm_home_low.png" alt="Home dashboard showing the low readiness reset prompt"><div class="shot-caption">Home — low readiness state</div></div>
+      <div class="shot"><img src="assets/gm_request_form.png" alt="Equipment request form with confidentiality badge"><div class="shot-caption">Equipment request</div></div>
+      <div class="shot"><img src="assets/gm_status_tracker.png" alt="Request status tracker with QR code"><div class="shot-caption">Status tracker + QR</div></div>
+      <div class="shot"><img src="assets/gm_mindset_lab.png" alt="Mindset Lab screen with mental training exercises"><div class="shot-caption">Mindset Lab</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The coordinator portal</h2>
+      <p>Kendra's whole job in one view — pending requests, available donations, and wellness signals she'd otherwise be tracking across three different spreadsheets.</p>
+    </div>
+    <div class="shot">
+      <img src="assets/gm_dashboard.png" alt="Coordinator portal dashboard with KPI cards and requests table">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Accessibility, built in not bolted on</h2>
+    </div>
+    <div class="four-col">
+      <div class="card"><p>All text and status colors meet WCAG AA contrast against the dark background.</p></div>
+      <div class="card"><p>Every tappable element meets a minimum 48×48px touch target.</p></div>
+      <div class="card"><p>Interactive components carry screen reader labels throughout.</p></div>
+      <div class="card"><p>Copy avoids clinical or alarming language — stigma-free microcopy was a constraint, not an afterthought.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Takeaways &amp; what's next</h2>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h3>What I learned</h3>
+        <p>Athletes needed speed and privacy on mobile; coordinators needed density and control on desktop — same underlying data, two genuinely different interfaces. And small decisions, like a confidentiality badge, did more to reduce stigma than any amount of educational copy could.</p>
+      </div>
+      <div class="card">
+        <h3>Next steps</h3>
+        <p>Field validation with local youth community centers, Apple/Google Wallet integration for offline pickup passes, and multi-language support for non-English-speaking families.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="next-cta">
+  <div class="wrap">
+    <h2>See where this all started.</h2>
+    <a href="tunevault.html" class="btn btn-primary">View the TuneVault case study</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span style="color: var(--text-muted); font-size: 0.95rem;">syaradua@gmail.com</span>
+    <ul class="foot-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tunevault.html">TuneVault</a></li>
+      <li><a href="gloveworks.html">GloveWorks</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
