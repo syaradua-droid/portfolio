@@ -196,6 +196,16 @@ body.home-page {
 }
 .home-page .thumb-gw .accent { color: #D8412F; }
 
+
+/* Real-screenshot thumbs (redesign) */
+.home-page .thumb-img { background: #14121C; }
+.home-page .thumb-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.home-page .thumb-tv2 { background: #121418; display: flex; justify-content: center; align-items: flex-start; gap: 12px; padding-top: 36px; }
+.home-page .thumb-tv2 img { width: 28%; max-width: 150px; border-radius: 12px; display: block; }
+.home-page .thumb-cp { background: #1F3A56; display: flex; align-items: flex-end; justify-content: center; gap: 24px; }
+.home-page .cp-phone { width: 150px; height: 300px; border-radius: 26px; background: #FAF8F4; padding: 20px 14px; display: flex; flex-direction: column; gap: 10px; }
+.home-page .cp-phone i { display: block; border-radius: 6px; }
+
 /* ---------- PROCESS ---------- */
 .home-page .process { padding: 6rem 2rem 0; }
 .home-page .process-card {

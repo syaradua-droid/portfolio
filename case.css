@@ -1,0 +1,100 @@
+/* =========================================================
+   Case-study pages — same warm system as the homepage (home.css).
+   Loaded after home.css; body has both .home-page and .case-page.
+========================================================= */
+.case-page { --c-maxw: 1120px; }
+.case-page img { max-width: 100%; }
+.case-page .c-inner, .case-page .c-sec { max-width: var(--c-maxw); margin: 0 auto; }
+.case-page .c-eyebrow { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+
+/* Hero */
+.case-page .c-hero { padding: 7rem 2rem 6rem; }
+.case-page .c-inner { display: flex; flex-direction: column; gap: 2rem; }
+.case-page .c-title { margin: 0; font-weight: 800; font-size: clamp(2.6rem, 6vw, var(--ts)); line-height: 1.02; letter-spacing: -0.03em; }
+.case-page .c-lede { margin: 0; max-width: 54rem; font-size: clamp(1.15rem, 1.8vw, 1.5rem); line-height: 1.5; opacity: 0.86; }
+.case-page .c-meta { margin-top: 1.5rem; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2rem; }
+.case-page .c-meta-cell { display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid; padding-top: 1.1rem; }
+.case-page .c-meta-cell .k { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.case-page .c-meta-cell .v { font-size: 1.1rem; line-height: 1.45; }
+
+/* Sections */
+.case-page .c-sec { padding: 7.5rem 2rem 0; display: flex; flex-direction: column; gap: 2.5rem; box-sizing: content-box; }
+.case-page .c-sec-head { display: flex; flex-direction: column; gap: 0.9rem; }
+.case-page .c-h2 { margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.08; letter-spacing: -0.025em; }
+.case-page .c-intro { margin: 0; max-width: 47.5rem; font-size: 1.25rem; line-height: 1.6; color: var(--h-text-muted); }
+
+/* Quote */
+.case-page .c-quote { margin: 0; padding: 0.5rem 0 0.5rem 2rem; border-left: 4px solid; display: flex; flex-direction: column; gap: 0.9rem; }
+.case-page .c-quote p { margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 500; font-size: clamp(1.4rem, 2.6vw, 2rem); line-height: 1.3; letter-spacing: -0.01em; }
+.case-page .c-quote .who { font-size: 1rem; color: var(--h-text-dim); }
+
+/* Cards + grids */
+.case-page .c-cards, .case-page .c-grid { display: grid; gap: 1.5rem; }
+.case-page .c1 { grid-template-columns: 1fr; }
+.case-page .c2, .case-page .g2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.case-page .c3, .case-page .g3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.case-page .c4, .case-page .g4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.case-page .g6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.case-page .c-card { background: #FFFFFF; border: 1.5px solid #E1DCD1; border-radius: 18px; padding: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.case-page .c-card h3 { margin: 0; font-size: 1.375rem; font-weight: 700; line-height: 1.25; }
+.case-page .c-card p { margin: 0; font-size: 1.06rem; line-height: 1.55; color: var(--h-text-muted); }
+.case-page .c-tag { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+
+/* Figures */
+.case-page .c-fig { margin: 0; display: flex; flex-direction: column; gap: 0.9rem; width: 100%; max-width: var(--w); flex: 0 1 var(--w); }
+.case-page .c-frame { width: 100%; border-radius: 18px; overflow: hidden; border: 1px solid #E1DCD1; }
+.case-page .c-frame img { width: 100%; height: 100%; display: block; }
+.case-page .c-fig figcaption { font-size: 0.95rem; line-height: 1.5; color: var(--h-text-dim); }
+
+/* Rows (figures side by side, text + image) */
+.case-page .c-row { display: flex; flex-wrap: wrap; }
+.case-page .c-row > div[style*="flex-basis: 0"] { min-width: 0; }
+.case-page .c-text { flex: 1 1 320px; display: flex; flex-direction: column; gap: 1rem; }
+.case-page .c-text h3 { margin: 0; font-size: 1.75rem; font-weight: 700; line-height: 1.2; }
+.case-page .c-text p { margin: 0; font-size: 1.2rem; line-height: 1.6; color: var(--h-text-muted); }
+
+/* Tables */
+.case-page .c-table { background: #FFFFFF; border: 1.5px solid #E1DCD1; border-radius: 18px; padding-top: 1.5rem; }
+.case-page .c-tr { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3rem; padding: 1.75rem 2rem; border-top: 1px solid #E1DCD1; font-size: 1.12rem; line-height: 1.55; }
+.case-page .c-th { border-top: 0; padding-top: 0; padding-bottom: 1rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--h-text-dim); }
+.case-page .c-tr .a { color: var(--h-text-muted); }
+.case-page .c-tr .b { font-weight: 600; display: flex; gap: 0.9rem; }
+
+/* Swatches */
+.case-page .c-swatch { display: flex; flex-direction: column; gap: 0.9rem; }
+.case-page .c-swatch .chip { height: 140px; border-radius: 16px; border: 1px solid #D6D0C4; }
+.case-page .c-swatch .name { font-size: 1.2rem; font-weight: 700; }
+.case-page .c-swatch .hex { font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; color: var(--h-text-dim); }
+.case-page .c-swatch .use { font-size: 1rem; line-height: 1.5; color: var(--h-text-muted); }
+
+/* Next project */
+.case-page .c-next { border-radius: 24px; padding: 3.5rem 4rem; display: flex; align-items: center; justify-content: space-between; gap: 3rem; }
+.case-page .c-next-copy { display: flex; flex-direction: column; gap: 0.75rem; }
+.case-page .c-next .n { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: clamp(2.2rem, 4vw, 3.25rem); letter-spacing: -0.03em; line-height: 1; }
+.case-page .c-next .d { font-size: 1.2rem; opacity: 0.8; }
+.case-page .c-next-go { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.case-page .c-footer { padding-top: 5rem; }
+.case-page .c-foot-links { display: flex; gap: 1.75rem; font-weight: 600; color: var(--h-ink-2); }
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .case-page .c4, .case-page .g4, .case-page .c-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-page .c3, .case-page .g3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-page .g6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .case-page .g2 { gap: 2rem !important; }
+}
+@media (max-width: 700px) {
+  .case-page .c-hero { padding: 4rem 1.25rem 3.5rem; }
+  .case-page .c-sec { padding: 4.5rem 1.25rem 0; gap: 2rem; }
+  .case-page .c2, .case-page .c3, .case-page .c4, .case-page .g2, .case-page .g3, .case-page .g4, .case-page .c-meta { grid-template-columns: 1fr; }
+  .case-page .g6 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case-page .c-row { flex-direction: column; align-items: stretch !important; gap: 2rem !important; }
+  .case-page .c-row > .c-fig { max-width: 100%; margin: 0 auto; }
+  .case-page .c-row > div[style*="flex-basis: 0"] { flex-basis: auto !important; }
+  .case-page .c-tr { grid-template-columns: 1fr; gap: 0.6rem; padding: 1.25rem; }
+  .case-page .c-th { display: none; }
+  .case-page .c-quote { padding-left: 1.25rem; }
+  .case-page .c-next { padding: 2rem; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+  .case-page .c-foot-links { flex-direction: column; gap: 0.5rem; }
+  .case-page .footer-bottom { flex-direction: column; gap: 1rem; }
+}
