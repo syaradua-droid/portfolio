@@ -1,0 +1,245 @@
+/* =========================================================
+   Homepage-only design system (v2)
+   Warm, light — distinct from the dark case-study system.
+   Display: Bricolage Grotesque · Body: Figtree
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap');
+
+:root {
+  --h-bg: #FBFAF7;
+  --h-bg-2: #E6E1D8;
+  --h-ink: #16161A;
+  --h-ink-2: #2A2925;
+  --h-text-muted: #4A4843;
+  --h-text-dim: #6B6860;
+  --h-border: #E7E3DA;
+  --h-border-2: #D6D0C4;
+  --h-card: #FFFFFF;
+  --h-accent: #2340C8;
+  --h-accent-soft: #EEF0FC;
+  --h-maxw: 1120px;
+}
+
+body.home-page {
+  margin: 0;
+  background: var(--h-bg);
+  color: var(--h-ink);
+  font-family: 'Figtree', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.home-page * { box-sizing: border-box; }
+.home-page a { color: inherit; text-decoration: none; }
+.home-page .wrap { max-width: var(--h-maxw); margin: 0 auto; padding: 0 2rem; }
+.home-page .display { font-family: 'Bricolage Grotesque', sans-serif; letter-spacing: -0.02em; }
+
+/* ---------- NAV (reuses .site-nav/.nav-toggle/.nav-links classes so nav.js keeps working) ---------- */
+.home-page .site-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--h-border);
+}
+.home-page .site-nav .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 80px;
+}
+.home-page .nav-mark {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.home-page .nav-mark span { color: var(--h-accent); }
+.home-page .nav-links { display: flex; align-items: center; gap: 2.4rem; list-style: none; margin: 0; padding: 0; font-weight: 500; }
+.home-page .nav-links a { color: var(--h-ink-2); transition: opacity 0.15s ease; }
+.home-page .nav-links a:hover { opacity: 0.7; }
+.home-page .nav-links .btn-pill {
+  display: flex; align-items: center; height: 3rem; padding: 0 1.5rem;
+  border-radius: 999px; background: var(--h-accent); color: #fff; font-weight: 600;
+}
+.home-page .nav-toggle {
+  display: none; flex-direction: column; justify-content: center; gap: 5px;
+  width: 36px; height: 36px; padding: 0; border: none; background: transparent; cursor: pointer;
+}
+.home-page .nav-toggle span { display: block; width: 100%; height: 2px; background: var(--h-ink); border-radius: 2px; transition: transform 0.2s ease, opacity 0.2s ease; }
+.home-page .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.home-page .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.home-page .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ---------- HERO ---------- */
+.home-page .hero {
+  position: relative;
+  background: var(--h-bg-2);
+  padding: 3.5rem 2rem 6rem;
+  display: flex; flex-direction: column; align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
+.home-page .hero-watermark {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 800;
+  font-size: clamp(4rem, 16vw, 18rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: var(--h-ink);
+  opacity: 0.06;
+  white-space: nowrap;
+  margin-top: -1rem;
+}
+.home-page .hero-role {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.8rem, 3.4vw, 3.2rem);
+  letter-spacing: -0.02em;
+  color: var(--h-ink-2);
+  margin-top: -2.5rem;
+}
+.home-page .hero-lede {
+  max-width: 42rem;
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: var(--h-text-muted);
+  margin: 1.1rem 0 0;
+}
+.home-page .hero-tools {
+  display: flex; flex-wrap: wrap; justify-content: center;
+  gap: 0.9rem; margin-top: 2.5rem;
+}
+.home-page .hero-tool {
+  height: 3rem; padding: 0 1.2rem; border-radius: 12px;
+  background: var(--h-card); border: 1px solid var(--h-border-2);
+  display: flex; align-items: center; font-weight: 600; font-size: 0.95rem;
+}
+.home-page .hero-avatar {
+  width: 7rem; height: 7rem; border-radius: 50%;
+  border: 6px solid var(--h-bg);
+  background: #2A2A2E; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 2.5rem;
+  margin-top: -3.5rem;
+}
+
+/* ---------- INTRO (bio + hire card) ---------- */
+.home-page .intro {
+  padding: 5.5rem 2rem 0;
+  display: flex; flex-direction: column; align-items: center; gap: 3rem;
+}
+.home-page .intro h1 { margin: 0; font-size: clamp(2.4rem, 5vw, 3.6rem); font-weight: 800; }
+.home-page .intro-grid {
+  width: 100%; max-width: 62rem;
+  display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem;
+}
+.home-page .intro-facts { display: flex; flex-direction: column; gap: 1.4rem; font-size: 1.1rem; color: var(--h-ink-2); }
+.home-page .intro-facts .fact { display: flex; align-items: center; gap: 0.9rem; }
+.home-page .intro-facts svg { flex-shrink: 0; }
+.home-page .intro-ctas { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 1rem; }
+.home-page .btn-lg {
+  height: 3.4rem; border-radius: 999px; font-size: 1.1rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center; gap: 0.7rem;
+}
+.home-page .btn-lg.primary { background: var(--h-accent); color: #fff; }
+.home-page .btn-lg.ghost { background: var(--h-card); border: 1.5px solid var(--h-border-2); }
+
+.home-page .hire-card {
+  border: 1.5px solid var(--h-border); border-radius: 20px; background: var(--h-card);
+  padding: 2rem 2.2rem;
+}
+.home-page .hire-card h2 { margin: 0 0 1.1rem; padding-bottom: 1.1rem; border-bottom: 1.5px solid #ECE8DF; font-size: 1.5rem; font-weight: 700; }
+.home-page .hire-row {
+  display: flex; align-items: center; gap: 1.1rem; padding: 1.2rem 0; border-bottom: 1px solid #F0ECE4;
+}
+.home-page .hire-row:last-of-type { border-bottom: none; }
+.home-page .hire-icon {
+  width: 3rem; height: 3rem; border-radius: 12px; background: var(--h-accent-soft);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.home-page .hire-copy { flex-grow: 1; display: flex; flex-direction: column; gap: 0.2rem; }
+.home-page .hire-copy .title { font-size: 1.1rem; font-weight: 600; }
+.home-page .hire-copy .sub { font-size: 0.9rem; color: var(--h-text-dim); }
+
+/* ---------- WORK GRID ---------- */
+.home-page .work {
+  padding: 6.5rem 2rem 0;
+  display: flex; flex-direction: column; gap: 2.5rem;
+}
+.home-page .work-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.home-page .work-eyebrow { font-size: 0.9rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--h-accent); }
+.home-page .work-head h2 { margin: 0.5rem 0 0; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+.home-page .work-count { font-size: 1.05rem; color: var(--h-text-dim); }
+.home-page .work-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.2rem; }
+.home-page .work-card { display: flex; flex-direction: column; gap: 1.1rem; }
+.home-page .work-thumb { height: 300px; border-radius: 20px; overflow: hidden; position: relative; }
+.home-page .work-tags { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.home-page .work-tag { padding: 0.35rem 0.75rem; border-radius: 999px; background: #EFECE5; font-size: 0.85rem; font-weight: 600; }
+.home-page .work-card h3 { margin: 0; font-size: 1.7rem; font-weight: 700; letter-spacing: -0.01em; }
+.home-page .work-card p { margin: 0; font-size: 1.05rem; line-height: 1.55; color: var(--h-text-muted); }
+.home-page .work-card .cta { font-size: 1rem; font-weight: 600; color: var(--h-accent); }
+
+/* Decorative thumb treatments per project */
+.home-page .thumb-tv { background: #EDE6F7; display: flex; align-items: center; justify-content: center; gap: 0.6rem; }
+.home-page .thumb-tv .bar { width: 12px; border-radius: 6px; background: #4B2E83; }
+.home-page .thumb-tv .bar.alt { background: #7A5BB5; }
+
+.home-page .thumb-gm { background: #DDE8D9; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; padding: 40px; }
+.home-page .thumb-gm div { border-radius: 12px; }
+
+.home-page .thumb-gw {
+  background: #141414; padding: 32px; display: flex; flex-direction: column; justify-content: flex-end;
+  font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; color: #F5F2EA;
+  font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 0.95; letter-spacing: -0.03em;
+}
+.home-page .thumb-gw .accent { color: #D8412F; }
+
+/* ---------- PROCESS ---------- */
+.home-page .process { padding: 6rem 2rem 0; }
+.home-page .process-card {
+  border-radius: 24px; background: var(--h-ink); color: #F5F2EA;
+  padding: 3.2rem; display: flex; flex-direction: column; gap: 2.4rem;
+}
+.home-page .process-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 2.5rem; flex-wrap: wrap; }
+.home-page .process-head h2 { margin: 0; max-width: 34rem; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; line-height: 1.15; }
+.home-page .process-head p { margin: 0; max-width: 24rem; font-size: 1.05rem; line-height: 1.6; color: #BDBAB2; }
+.home-page .process-steps { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1.4rem; }
+.home-page .process-step { border-top: 1.5px solid #3A3935; padding-top: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.home-page .process-step .n { font-size: 0.9rem; color: #8E8B83; }
+.home-page .process-step .t { font-size: 1.25rem; font-weight: 700; }
+.home-page .process-step .d { font-size: 0.95rem; line-height: 1.5; color: #BDBAB2; }
+
+/* ---------- FOOTER ---------- */
+.home-page footer.home-footer { padding: 6rem 2rem 4rem; display: flex; flex-direction: column; gap: 2rem; }
+.home-page .footer-cta {
+  display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+  padding-bottom: 2.2rem; border-bottom: 1px solid var(--h-border-2);
+}
+.home-page .footer-cta h2 { margin: 0; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 700; letter-spacing: -0.02em; }
+.home-page .footer-cta a.email {
+  height: 3.6rem; padding: 0 1.8rem; border-radius: 999px; background: var(--h-accent); color: #fff;
+  display: flex; align-items: center; font-size: 1.15rem; font-weight: 600; white-space: nowrap;
+}
+.home-page .footer-bottom { display: flex; justify-content: space-between; font-size: 0.95rem; color: var(--h-text-dim); }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 860px) {
+  .home-page .intro-grid { grid-template-columns: 1fr; }
+  .home-page .work-grid { grid-template-columns: 1fr; }
+  .home-page .process-head { flex-direction: column; align-items: flex-start; }
+  .home-page .process-steps { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .home-page .site-nav .wrap { flex-wrap: wrap; height: auto; min-height: 80px; padding-top: 0.6rem; padding-bottom: 0.6rem; }
+  .home-page .nav-toggle { display: flex; }
+  .home-page .nav-links {
+    flex-basis: 100%; flex-direction: column; align-items: flex-start; gap: 0;
+    max-height: 0; overflow: hidden; transition: max-height 0.2s ease;
+  }
+  .home-page .nav-links.open { max-height: 320px; }
+  .home-page .nav-links li { width: 100%; border-top: 1px solid var(--h-border); }
+  .home-page .nav-links a { display: block; padding: 0.85rem 0; }
+  .home-page .nav-links .btn-pill { margin: 0.7rem 0; }
+  .home-page .hero { padding: 2.5rem 1.25rem 4rem; }
+  .home-page .work, .home-page .intro, .home-page .process { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .home-page footer.home-footer { padding: 4rem 1.25rem 3rem; }
+}
