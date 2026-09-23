@@ -56,6 +56,7 @@ body {
 }
 
 h1, h2, h3 {
+  overflow-wrap: break-word;
   font-family: 'Fraunces', serif;
   font-weight: 600;
   line-height: 1.12;
@@ -278,6 +279,7 @@ footer a:hover { color: var(--text); }
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 16px 40px -20px rgba(0,0,0,0.7);
 }
 .mobile-gallery .shot img,
 .before-after .shot img {
@@ -297,7 +299,7 @@ footer a:hover { color: var(--text); }
 .finding-card .fix-label { color: #6EE7B7; margin-top: 1rem; display: block; }
 .finding-card p { color: var(--text-muted); margin: 0.4rem 0 0; font-size: 0.96rem; }
 
-.mobile-gallery { display: flex; gap: 1.4rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x proximity; }
+.mobile-gallery { display: flex; justify-content: center; gap: 1.4rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x proximity; }
 .mobile-gallery .shot { flex: 0 0 220px; scroll-snap-align: start; }
 
 .next-cta {
