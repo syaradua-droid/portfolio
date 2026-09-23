@@ -23,14 +23,14 @@
 
 <header class="cs-hero">
   <div class="wrap">
-    <span class="spread-tag tag-gm">Mobile + web · Social good</span>
-    <h1>GameMind</h1>
-    <p class="lede">Youth athletics equity &amp; mental wellness — a mobile app for athletes and a coordinator portal for the adults trying to help them, built around one hard constraint: nothing could feel like it was drawing attention to a kid who's struggling.</p>
+    <span class="spread-tag tag-gm">Mobile + Web · Social Good</span>
+    <h1>GameMind: getting youth athletes the gear they need and a safe way to talk about pressure</h1>
+    <p class="lede">Low-income youth athletes need equipment they can't always afford, and a way to talk about competitive stress that doesn't read as weakness. The hardest part wasn't the interface — it was making both feel safe to ask for.</p>
     <div class="cs-meta">
-      <div><div class="k">Role</div><div class="v">Lead UX Researcher &amp; Designer</div></div>
-      <div><div class="k">Timeline</div><div class="v">4 weeks</div></div>
-      <div><div class="k">Tools</div><div class="v">Figma, FigJam, Miro</div></div>
-      <div><div class="k">Platform</div><div class="v">Mobile app + responsive web</div></div>
+      <div><div class="k">Role</div><div class="v">UX/UI Designer (Solo)</div></div>
+      <div><div class="k">Platform</div><div class="v">Web (Coordinator Portal) + Mobile (Athlete App)</div></div>
+      <div><div class="k">Tools</div><div class="v">Figma</div></div>
+      <div><div class="k">Project Type</div><div class="v">Self-Directed Concept</div></div>
     </div>
   </div>
 </header>
@@ -38,101 +38,34 @@
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <h2>The problem</h2>
+      <h2>The problem, from two sides</h2>
+      <p>GameMind is a self-directed concept — a problem I wanted to design for, not a client brief or a researched initiative. No interviews, no formal personas, no usability rounds behind it: just a system I wanted to think through end to end, imagined from two sides at once.</p>
     </div>
-    <p class="pull-quote">"Low-income youth athletes face steep equipment costs and a culture of silence around competitive stress and burnout — and the adults trying to help them have no central system to do it."</p>
+    <p class="pull-quote">"Low-income youth athletes need equipment they can't always afford, and a way to talk about competitive stress that doesn't read as weakness."</p>
+    <div class="three-col" style="margin-top: 2.5rem;">
+      <div class="card"><h3>Equipment gap</h3><p>Gear requests, donor inventory, and fulfillment would otherwise happen informally — nothing tracking requests, matching them to donations, or showing an athlete where their gear actually is.</p></div>
+      <div class="card"><h3>Stigma around asking</h3><p>Requesting help — for equipment or for how competition pressure feels — carries a social cost for a teenager, especially in front of teammates and coaches.</p></div>
+      <div class="card"><h3>No shared system</h3><p>A coordinator and an athlete have no common tool: the coordinator working from memory and spreadsheets, the athlete with no visibility into a request once it leaves their hands.</p></div>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <h2>Two people, two very different jobs to be done</h2>
+      <h2>Two roles, two very different jobs to be done</h2>
+      <p>Same platform, opposite vantage points — a coordinator triaging requests at scale, and an athlete who just wants gear and a moment to reset before the pressure of the next practice. Coach Rivera and Jordan are illustrative, not research participants — a way to keep the design honest about who each screen was for.</p>
     </div>
-    <div class="two-col">
-      <div class="card" style="padding: 2rem;">
-        <h3 style="font-size: 1.3rem;">Marcus Chen, 16</h3>
-        <p style="margin-bottom: 1rem; color: var(--gm-accent); font-size: 0.9rem; font-weight: 600;">The Determined Competitor</p>
-        <p>"I shouldn't have to choose between new shoes and helping with rent — but nobody talks about how much pressure we're actually under."</p>
+    <div class="gw-persona-split">
+      <div class="card">
+        <div class="persona-role">ROLE A // PROGRAM COORDINATOR</div>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.6rem;">Coach Rivera</h3>
+        <p>Runs equipment logistics for the program on top of an already full coaching load. Needs to triage urgent requests, match them to donated inventory, and spot which athletes need a wellness check-in — fast, without digging.</p>
       </div>
-      <div class="card" style="padding: 2rem;">
-        <h3 style="font-size: 1.3rem;">Coach Kendra Vance, 28</h3>
-        <p style="margin-bottom: 1rem; color: var(--gm-accent); font-size: 0.9rem; font-weight: 600;">The Overextended Advocate</p>
-        <p>"I can teach a kid how to shoot a free throw. I can't magically produce a pair of shoes or a sports psychologist out of thin air."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Marcus's emotional arc</h2>
-      <p>From silent hesitation to confident pickup — every touchpoint in the app had to actively lower the emotional barrier to asking for help.</p>
-    </div>
-    <div class="four-col">
-      <div class="card"><h3 style="font-size: 1rem;">1. Recognize the need</h3><p><em>Hesitant &amp; isolated</em></p></div>
-      <div class="card"><h3 style="font-size: 1rem;">2. Request support</h3><p><em>Cautiously relieved</em></p></div>
-      <div class="card"><h3 style="font-size: 1rem;">3. Receive &amp; connect</h3><p><em>Grateful, still guarded</em></p></div>
-      <div class="card"><h3 style="font-size: 1rem;">4. Sustain &amp; reflect</h3><p><em>Confident, paying it forward</em></p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>What existed already — and where it fell short</h2>
-    </div>
-    <div class="four-col">
-      <div class="card"><h3>Good Sports</h3><p>No self-serve request flow — relies on partner orgs, not the athlete directly.</p></div>
-      <div class="card"><h3>TeamSnap</h3><p>Strong logistics, zero equity or wellness features.</p></div>
-      <div class="card"><h3>Calm</h3><p>Generic wellness content, not athlete- or sport-specific.</p></div>
-      <div class="card"><h3>DonorsChoose</h3><p>Proven donor-matching model, built for classrooms not sports.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Sketch first</h2>
-      <p>Before any digital wireframing, the Equipment Request flow got sketched on paper — the layout below carried through to every build after it.</p>
-    </div>
-    <div class="shot" style="max-width: 340px;">
-      <img src="assets/gm_lofi_sketch.webp" alt="Hand-sketched paper wireframe of the Equipment Request form">
-      <div class="shot-caption">Low-fi wireframe — Equipment Request form</div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Usability testing, and what it actually changed</h2>
-      <p>5 youth athletes and 3 coordinators, unmoderated remote sessions plus follow-up interviews. These three fixes are the direct result — and they're live in the screens below, not just described here.</p>
-    </div>
-    <div class="three-col">
-      <div class="finding-card">
-        <span class="label friction-label">Friction</span>
-        <h3>Privacy hesitation</h3>
-        <p>Athletes paused at submit, afraid their coach would see the request.</p>
-        <span class="label fix-label">Fix</span>
-        <p>A "100% Confidential" badge now sits directly above the submit button.</p>
-      </div>
-      <div class="finding-card">
-        <span class="label friction-label">Friction</span>
-        <h3>No guidance after a low score</h3>
-        <p>Athletes wanted support when they logged low mental readiness.</p>
-        <span class="label fix-label">Fix</span>
-        <p>Scores below 5 auto-trigger a "Recommended Mental Reset" prompt.</p>
-      </div>
-      <div class="finding-card">
-        <span class="label friction-label">Friction</span>
-        <h3>Unclear pickup process</h3>
-        <p>Athletes didn't know what documentation was needed at pickup.</p>
-        <span class="label fix-label">Fix</span>
-        <p>A QR verification pass is now built directly into the status tracker.</p>
+      <div class="card">
+        <div class="persona-role">ROLE B // YOUTH ATHLETE</div>
+        <h3 style="font-size: 1.2rem; margin-bottom: 0.6rem;">Jordan</h3>
+        <p>Wants gear without the awkwardness of asking a coach face-to-face, and somewhere to admit "I'm not feeling ready today" that doesn't get treated as an excuse.</p>
       </div>
     </div>
   </div>
@@ -141,15 +74,12 @@
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <h2>The athlete app</h2>
-      <p>Five screens, one continuous flow — from checking in, to requesting gear privately, to seeing exactly where that request stands.</p>
+      <h2>From paper to product</h2>
+      <p>Early sketching focused on the request flow first — the moment with the most social friction, since it's the one an athlete has to initiate themselves.</p>
     </div>
-    <div class="mobile-gallery">
-      <div class="shot"><img src="assets/gm_home_normal.webp" alt="Home dashboard, normal readiness state"><div class="shot-caption">Home — normal state</div></div>
-      <div class="shot"><img src="assets/gm_home_low.webp" alt="Home dashboard showing the low readiness reset prompt"><div class="shot-caption">Home — low readiness state</div></div>
-      <div class="shot"><img src="assets/gm_request_form.webp" alt="Equipment request form with confidentiality badge"><div class="shot-caption">Equipment request</div></div>
-      <div class="shot"><img src="assets/gm_status_tracker.webp" alt="Request status tracker with QR code"><div class="shot-caption">Status tracker + QR</div></div>
-      <div class="shot"><img src="assets/gm_mindset_lab.webp" alt="Mindset Lab screen with mental training exercises"><div class="shot-caption">Mindset Lab</div></div>
+    <div class="shot">
+      <img src="assets/gm_lofi_sketch.webp" alt="Paper wireframe sketch of the GameMind equipment request detail screen">
+      <div class="shot-caption">Early paper wireframe — request detail screen, before the anonymity toggle and confidential-hub framing were added</div>
     </div>
   </div>
 </section>
@@ -158,10 +88,16 @@
   <div class="wrap">
     <div class="section-head">
       <h2>The coordinator portal</h2>
-      <p>Kendra's whole job in one view — pending requests, available donations, and wellness signals she'd otherwise be tracking across three different spreadsheets.</p>
+      <p>One dashboard for the side of GameMind Coach Rivera actually lives in — pending requests, available donated inventory, and which athletes have flagged high pre-game stress, all visible without opening a single spreadsheet.</p>
     </div>
     <div class="shot">
-      <img src="assets/gm_dashboard.webp" alt="Coordinator portal dashboard with KPI cards and requests table">
+      <img src="assets/gm_dashboard.webp" alt="GameMind coordinator portal dashboard showing pending equipment requests, available donated gear, wellness check-in alerts, and an active requests table">
+      <div class="shot-caption">Coordinator dashboard — urgency, status, and wellness alerts surfaced at a glance so nothing depends on memory</div>
+    </div>
+    <div class="three-col" style="margin-top: 2.5rem;">
+      <div class="card"><h3>Three numbers that matter</h3><p>Pending requests, available donated gear, and wellness check-in alerts sit at the top — the three things a coordinator needs before doing anything else.</p></div>
+      <div class="card"><h3>Status, not spreadsheets</h3><p>Every request carries urgency and status badges (Unmatched, Matched, Shipped, Ready for Pickup) so triage is a glance, not a lookup.</p></div>
+      <div class="card"><h3>Donations stay visible</h3><p>A donation drop-off log keeps community contributions traceable back to the requests they fulfill.</p></div>
     </div>
   </div>
 </section>
@@ -169,14 +105,96 @@
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <h2>Accessibility, built in not bolted on</h2>
+      <h2>Design system</h2>
+      <p>A dark, low-glare UI built for a coordinator scanning a dashboard between drills, and an athlete checking in from a phone at the gym. Status color does the heavy lifting so nobody has to read every label.</p>
     </div>
     <div class="four-col">
-      <div class="card"><p>All text and status colors meet WCAG AA contrast against the dark background.</p></div>
-      <div class="card"><p>Every tappable element meets a minimum 48×48px touch target.</p></div>
-      <div class="card"><p>Interactive components carry screen reader labels throughout.</p></div>
-      <div class="card"><p>Copy avoids clinical or alarming language — stigma-free microcopy was a constraint, not an afterthought.</p></div>
+      <div class="card"><div style="width:100%;height:40px;border-radius:6px;background:#7C3AED;margin-bottom:0.8rem;"></div><h3 style="font-size:0.95rem;">Primary Purple</h3><p style="font-size:0.85rem;">Primary actions, active nav state, high-readiness fill</p></div>
+      <div class="card"><div style="width:100%;height:40px;border-radius:6px;background:#F59E0B;margin-bottom:0.8rem;"></div><h3 style="font-size:0.95rem;">Amber</h3><p style="font-size:0.85rem;">In-transit status, medium urgency, low-readiness prompt</p></div>
+      <div class="card"><div style="width:100%;height:40px;border-radius:6px;background:#10B981;margin-bottom:0.8rem;"></div><h3 style="font-size:0.95rem;">Emerald</h3><p style="font-size:0.85rem;">Matched / Ready for Pickup — the "it's handled" state</p></div>
+      <div class="card"><div style="width:100%;height:40px;border-radius:6px;background:#EF4444;margin-bottom:0.8rem;"></div><h3 style="font-size:0.95rem;">Urgent Red</h3><p style="font-size:0.85rem;">High-urgency requests, low mental-readiness scores</p></div>
     </div>
+    <p style="color: var(--text-muted); margin-top: 1.6rem; max-width: 62ch;">Backgrounds, type scale, buttons, and form controls (dropdown, segmented category, size chips, privacy toggle) are documented as a shared sticker sheet in Figma, so the coordinator portal and athlete app read as one system despite serving two very different contexts of use.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>The athlete app adapts to how you're actually feeling</h2>
+      <p>A daily mental-readiness check-in drives what the home screen shows next — a low score surfaces a short reset before anything else competes for attention.</p>
+    </div>
+    <div class="before-after">
+      <div>
+        <div class="shot-label">Low readiness — 3/10</div>
+        <div class="shot"><img src="assets/gm_home_low.webp" alt="GameMind athlete home screen at low mental readiness, showing a recommended 3-minute mental reset"></div>
+      </div>
+      <div>
+        <div class="shot-label">Higher readiness — 7/10</div>
+        <div class="shot"><img src="assets/gm_home_normal.webp" alt="GameMind athlete home screen at higher mental readiness, showing shipped request tracking and quick links"></div>
+      </div>
+    </div>
+    <p style="color: var(--text-muted); margin-top: 1.6rem; max-width: 62ch;">Below a threshold, the reset card takes priority over everything else on the screen — Request Gear and Mindset Lab drop to secondary position. It's a small piece of logic, but it's the difference between an app that just logs a number and one that actually responds to it.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Mindset Lab</h2>
+      <p>Short, specific mental-training exercises — filterable by what's actually happening (pre-game anxiety, handling pressure, focus) rather than one generic "wellness" bucket.</p>
+    </div>
+    <div class="shot" style="max-width: 390px;">
+      <img src="assets/gm_mindset_lab.webp" alt="GameMind Mindset Lab screen with categorized breathing and focus exercises and a Connect with a Mentor option">
+      <div class="shot-caption">Exercises are named for the moment they're for — "Post-Error Recovery," "Championship Breathing" — not generic labels</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Requesting gear, without the awkward conversation</h2>
+      <p>A structured request replaces the DM-to-a-coach model — sport, category, and size as quick taps, an anonymity toggle so a name never has to reach a donor, and a status tracker so an athlete never has to ask "did that go through?"</p>
+    </div>
+    <div class="two-col">
+      <div class="shot">
+        <img src="assets/gm_request_form.webp" alt="GameMind equipment request form with sport, category, size selection, and a Submit Anonymously toggle">
+        <div class="shot-caption">Request form — anonymity is on by default, with a plain-language confidentiality note instead of legal boilerplate</div>
+      </div>
+      <div class="shot">
+        <img src="assets/gm_status_tracker.webp" alt="GameMind request status tracker showing submitted, matched, shipped, and ready-for-pickup stages with a pickup location and QR code">
+        <div class="shot-caption">Status tracker — a four-stage stepper and a QR pickup code close the loop without another conversation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="border-bottom: none;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Design decisions that came from the stigma problem</h2>
+      <p>The interface work here was the easy part. The harder calls were about what the product should never require of someone.</p>
+    </div>
+    <table class="gw-table">
+      <thead>
+        <tr><th>What it had to solve for</th><th>Design response</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asking a coach in person for gear can feel like admitting you can't afford to play.</td>
+          <td class="gw-fix">Request Gear is a form, not a conversation — with an anonymity toggle on by default so a donor never sees a name.</td>
+        </tr>
+        <tr>
+          <td>A daily "how are you feeling" check-in only works if it changes something, not just logs a number.</td>
+          <td class="gw-fix">A low readiness score reorders the home screen itself — the reset becomes the first thing you see, not an optional add-on.</td>
+        </tr>
+        <tr>
+          <td>Coordinators can't act on wellness data they have to go looking for.</td>
+          <td class="gw-fix">Wellness Check-In Alerts sit on the coordinator dashboard next to equipment requests — same priority, same glance.</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </section>
 
@@ -188,11 +206,11 @@
     <div class="two-col">
       <div class="card">
         <h3>What I learned</h3>
-        <p>Athletes needed speed and privacy on mobile; coordinators needed density and control on desktop — same underlying data, two genuinely different interfaces. And small decisions, like a confidentiality badge, did more to reduce stigma than any amount of educational copy could.</p>
+        <p>Designing for two users on one platform means every screen has to earn its place twice — once for what a coordinator needs to act on, and once for what an athlete needs to feel safe enough to use at all.</p>
       </div>
       <div class="card">
         <h3>Next steps</h3>
-        <p>Field validation with local youth community centers, Apple/Google Wallet integration for offline pickup passes, and multi-language support for non-English-speaking families.</p>
+        <p>This is concept-stage: a design system and product flows built solo in Figma, with no client and no research behind it yet. Talking to actual coordinators and youth athletes is the next step before any of this could ship for real.</p>
       </div>
     </div>
   </div>
@@ -200,8 +218,8 @@
 
 <section class="next-cta">
   <div class="wrap">
-    <h2>See where this all started.</h2>
-    <a href="tunevault.html" class="btn btn-primary">View the TuneVault case study</a>
+    <h2>Next up: GloveWorks, a very different design problem.</h2>
+    <a href="gloveworks.html" class="btn btn-primary">View the GloveWorks case study</a>
   </div>
 </section>
 
