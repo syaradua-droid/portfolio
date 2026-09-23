@@ -104,13 +104,17 @@ body.home-page {
   margin: 1.1rem 0 0;
 }
 .home-page .hero-tools {
-  display: flex; flex-wrap: wrap; justify-content: center;
-  gap: 0.9rem; margin-top: 2.5rem;
+  position: relative;
+  width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: 2.5rem;
 }
+.home-page .hero-tools .tool-group { display: flex; gap: 0.9rem; }
 .home-page .hero-tool {
   height: 3rem; padding: 0 1.2rem; border-radius: 12px;
   background: var(--h-card); border: 1px solid var(--h-border-2);
   display: flex; align-items: center; font-weight: 600; font-size: 0.95rem;
+  white-space: nowrap;
 }
 .home-page .hero-avatar {
   width: 7rem; height: 7rem; border-radius: 50%;
@@ -118,7 +122,7 @@ body.home-page {
   background: #2A2A2E; color: #fff;
   display: flex; align-items: center; justify-content: center;
   font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 2.5rem;
-  margin-top: -3.5rem;
+  margin: 1.6rem auto 0;
 }
 
 /* ---------- INTRO (bio + hire card) ---------- */
@@ -229,6 +233,8 @@ body.home-page {
 }
 
 @media (max-width: 700px) {
+  .home-page .hero-tools { flex-wrap: wrap; justify-content: center; gap: 0.9rem; }
+  .home-page .hero-tools .tool-group { justify-content: center; flex-wrap: wrap; }
   .home-page .site-nav .wrap { flex-wrap: wrap; height: auto; min-height: 80px; padding-top: 0.6rem; padding-bottom: 0.6rem; }
   .home-page .nav-toggle { display: flex; }
   .home-page .nav-links {
