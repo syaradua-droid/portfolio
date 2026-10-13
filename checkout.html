@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Powered Checkout — Case study · Shams Yar-Adua</title>
+<meta name="description" content="From 50 customer complaints to a five-step checkout that shows costs early, never loses a customer's work, and recovers gracefully when payment fails.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI-Powered Checkout — Case study · Shams Yar-Adua">
+<meta property="og:description" content="From 50 customer complaints to a five-step checkout that shows costs early, never loses a customer's work, and recovers gracefully when payment fails.">
+<meta property="og:image" content="https://syaradua-droid.github.io/portfolio/assets/og-index.png">
+<meta property="og:url" content="https://syaradua-droid.github.io/portfolio/checkout.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI-Powered Checkout — Case study · Shams Yar-Adua">
+<meta name="twitter:description" content="From 50 customer complaints to a five-step checkout that shows costs early, never loses a customer's work, and recovers gracefully when payment fails.">
+<meta name="twitter:image" content="https://syaradua-droid.github.io/portfolio/assets/og-index.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="case.css">
+</head>
+<body class="home-page case-page">
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Shams<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html#work">All work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:syaradua@gmail.com" class="btn-pill">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="c-hero" style="background:#12263F;color:#FFFFFF">
+<div class="c-inner">
+<span class="c-eyebrow" style="color:#F2B544">Course project · Checkout · Conversational UX</span>
+<h1 class="c-title" style="font-family:'Bricolage Grotesque', sans-serif;--ts:88px">AI-Powered Checkout</h1>
+<p class="c-lede">Turning 50 customer complaints into a five-step checkout that shows every cost early, never loses a customer's work, and recovers gracefully when a payment fails.</p>
+<div class="c-meta"><div class="c-meta-cell" style="border-color:#2C4560"><span class="k" style="color:#F2B544">Role</span><span class="v">UX/UI Designer (solo)</span></div><div class="c-meta-cell" style="border-color:#2C4560"><span class="k" style="color:#F2B544">Context</span><span class="v">Course project: Generative AI for UX/UI Design</span></div><div class="c-meta-cell" style="border-color:#2C4560"><span class="k" style="color:#F2B544">Data</span><span class="v">Provided: 50 feedback quotes, 30 user stories</span></div><div class="c-meta-cell" style="border-color:#2C4560"><span class="k" style="color:#F2B544">Focus</span><span class="v">Synthesis → flows → conversational recovery</span></div></div>
+</div>
+</header>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">About this project</span>
+<h2 class="c-h2">A guided project, so here is what is mine.</h2>
+<p class="c-intro">The research data was supplied by the course, not collected by me. There were no interviews and no usability tests, and the screens are low-fidelity wireframes and a specification, not shipped UI. The decisions below are what I contributed.</p>
+</div>
+<div class="c-cards c2"><div class="c-card"><span class="c-tag" style="color:#B07A10">Provided</span><h3>Research inputs</h3><p>50 anonymized customer feedback quotes and 30 user stories for a fictional e-commerce checkout.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">Mine</span><h3>Synthesis and design decisions</h3><p>Ranking the pain points, building two personas, mapping the journey, choosing and prioritizing features, designing the flow, refining the Payment screen, and scripting recovery conversations.</p></div></div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">The problem</span>
+<h2 class="c-h2">The checkout surprises people, then forgets what they typed.</h2>
+<p class="c-intro">Five patterns account for 39 of the 50 comments. The other 11 are about guest checkout clarity, cart clutter and hard-to-find promo options. The most common problem is the one users cannot see coming: losing their work.</p>
+</div>
+<blockquote class="c-quote" style="border-color:#F2B544"><p>“When I applied a coupon code, my entire cart reset, which was frustrating.”</p><span class="who">Customer feedback #8</span></blockquote><div class="c-table"><div class="c-tr c-th"><span>Pain point (mentions)</span><span>What users described</span></div>
+<div class="c-tr"><span class="a">Form instability and data loss (13)</span><span class="b">Promo codes, gift cards, payment-method switches and back-navigation wipe fields. “Entering payment details on mobile sometimes triggers an unexpected page reload, and I have to start over.” (#28)</span></div>
+<div class="c-tr"><span class="a">Vague errors and validation (7)</span><span class="b">“Error messages are often vague and do not clearly explain what went wrong with payment entry.” (#44)</span></div>
+<div class="c-tr"><span class="a">Confirmation latency and clutter (7)</span><span class="b">“The payment confirmation sometimes takes too long to load, and I am left wondering if my transaction was successful.” (#5)</span></div>
+<div class="c-tr"><span class="a">Hidden fees and late costs (6)</span><span class="b">“I was surprised by extra shipping fees that appeared only at the last step, which made me second-guess my purchase.” (#2)</span></div>
+<div class="c-tr"><span class="a">Mobile touch targets and input friction (6)</span><span class="b">“The buttons are small, which makes it hard to navigate on a smartphone.” (#3)</span></div>
+</div><p class="c-intro" style="margin-top:1rem">Each category carries a severity rating (High to Medium) alongside its raw count, so the ranking can be challenged. Form instability, hidden fees and mobile friction rate High because they hit users at the point of payment; errors and confirmation rate lower.</p>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Personas</span>
+<h2 class="c-h2">Two people, one broken checkout.</h2>
+<p class="c-intro">Both are synthetic composites. Every goal and frustration cites the feedback numbers it came from, and their quotes are labeled as illustrative.</p>
+</div>
+<div class="c-cards c2"><div class="c-card"><span class="c-tag" style="color:#B07A10">Maya Lin · 28 · Chicago</span><h3>Fast-Paced Mobile</h3><p>Social Media Coordinator who checks out on her phone in short windows. <b>Preferred devices:</b> smartphone first. <b>Preferred features:</b> autofill, express checkout, large targets, a sticky pay button. <b>She leaves when:</b> a form reloads or freezes.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">David Miller · 43 · Columbus</span><h3>Methodical Value Maximizer</h3><p>Financial Analyst who compares totals and treats promo codes as part of the price. <b>Preferred devices:</b> laptop to buy, phone to track. <b>Preferred features:</b> early cost breakdown, visible promo field, loyalty points. <b>He loses trust when:</b> a number changes at the last step.</p></div></div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Journey</span>
+<h2 class="c-h2">The emotional low is Payment, for both of them.</h2>
+<p class="c-intro">Five stages, scored from -2 to +2. The scores are my qualitative judgments from the feedback, not measured data. Maya cannot recover from a reload; David keeps going but trusts the store less.</p>
+</div>
+<figure class="c-fig" style="--w:1120px;flex:none"><div class="c-frame" style="background:#FFFFFF"><img src="assets/co_emotion.webp" alt="Line chart of emotional scores for Maya Lin and David Miller across five checkout stages, lowest at Payment" loading="lazy" style="object-fit:contain"></div><figcaption>Both personas bottom out at Payment. Confirmation is the second dip, and the cheapest to fix.</figcaption></figure><figure class="c-fig" style="--w:1120px;flex:none"><div class="c-frame" style="background:#FFFFFF"><img src="assets/co_journey.webp" alt="Five-stage customer journey matrix with user actions, emotions, touchpoints, pain points and opportunities" loading="lazy" style="object-fit:contain"></div><figcaption>The full journey matrix. Pain points cite the feedback numbers behind them.</figcaption></figure>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Decision 1 · Architecture</span>
+<h2 class="c-h2">Late disclosure is an architecture problem, not a styling problem.</h2>
+<p class="c-intro">A prettier fee badge on the last screen does not stop sticker shock. Shipping and tax estimates have to exist earlier in the flow, and form state has to survive every secondary action.</p>
+</div>
+<div class="c-cards c2"><div class="c-card"><span class="c-tag" style="color:#B07A10">Costs</span><h3>Upfront Cost Breakdown Drawer</h3><p>A persistent summary on the cart, customer information, delivery and payment steps. Shipping and tax read “estimated” until the address is entered, then exact. The total only changes when the user changes something.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">State</span><h3>Persistent Form State</h3><p>One checkout state store survives promo codes, payment-method switches, back-navigation and reload. Card number and security code are never stored; promo actions update the total only.</p></div></div><p class="c-intro">Priority: persistent state, the cost drawer and the mobile ergonomics system are P0. Errors and confirmation are P1. The conversational assistant is P2, because it depends on the P0 work existing first.</p>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Decision 2 · Flow</span>
+<h2 class="c-h2">Five standard steps, with state carried between each.</h2>
+<p class="c-intro">Cart, Customer Information, Delivery, Payment, Confirmation. I split Delivery out so no step carries a combined label like “Details & Shipping”, and so shipping choices sit beside dates and prices.</p>
+</div>
+<figure class="c-fig" style="--w:1120px;flex:none"><div class="c-frame" style="background:#FFFFFF"><img src="assets/co_flow.webp" alt="Five-step checkout flow with forward steps and back paths showing which state is kept" loading="lazy" style="object-fit:contain"></div><figcaption>Back navigation keeps everything except card data, which is cleared on purpose.</figcaption></figure><div class="c-row" style="gap:20px;align-items:flex-start;justify-content:space-between"><figure class="c-fig" style="--w:200px"><div class="c-frame" style="background:#FFFFFF;aspect-ratio:652/1277"><img src="assets/co_wf1.webp" alt="Cart wireframe with cost breakdown drawer" loading="lazy" style="object-fit:contain"></div><figcaption>1 · Cart</figcaption></figure><figure class="c-fig" style="--w:200px"><div class="c-frame" style="background:#FFFFFF;aspect-ratio:652/1277"><img src="assets/co_wf2.webp" alt="Customer Information wireframe" loading="lazy" style="object-fit:contain"></div><figcaption>2 · Customer Information</figcaption></figure><figure class="c-fig" style="--w:200px"><div class="c-frame" style="background:#FFFFFF;aspect-ratio:652/1277"><img src="assets/co_wf3.webp" alt="Delivery wireframe with shipping options" loading="lazy" style="object-fit:contain"></div><figcaption>3 · Delivery</figcaption></figure><figure class="c-fig" style="--w:200px"><div class="c-frame" style="background:#FFFFFF;aspect-ratio:652/1277"><img src="assets/co_wf4.webp" alt="Payment wireframe with method tabs and promo field" loading="lazy" style="object-fit:contain"></div><figcaption>4 · Payment</figcaption></figure><figure class="c-fig" style="--w:200px"><div class="c-frame" style="background:#FFFFFF;aspect-ratio:652/1277"><img src="assets/co_wf5.webp" alt="Confirmation wireframe" loading="lazy" style="object-fit:contain"></div><figcaption>5 · Confirmation</figcaption></figure></div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Decision 3 · Payment screen</span>
+<h2 class="c-h2">Refined for thumbs, judged against named standards.</h2>
+<p class="c-intro">Payment is the highest-friction step, so I specified it in detail: 52px targets, 16px margins, a sticky pay button and persistent labels. Each change is tied to a recognized framework, not a taste call.</p>
+</div>
+<div class="c-row" style="gap:40px;align-items:flex-start"><figure class="c-fig" style="--w:520px"><div class="c-frame" style="background:#F4F6FA"><img src="assets/co_payment_spec.webp" alt="Annotated mobile Payment screen specification, Step 4 of 5" loading="lazy" style="object-fit:contain"></div><figcaption>Payment, Step 4 of 5 (schematic).</figcaption></figure><div style="flex:1;min-width:280px"><div class="c-table"><div class="c-tr c-th"><span>Change</span><span>Framework</span></div>
+<div class="c-tr"><span class="a">52px targets, 12–16px spacing</span><span class="b">WCAG 2.2 AA 2.5.8 Target Size; Nielsen #5 Error Prevention</span></div>
+<div class="c-tr"><span class="a">Promo applies to the total only</span><span class="b">Nielsen #5 Error Prevention; #1 Visibility of System Status</span></div>
+<div class="c-tr"><span class="a">Inline, specific errors</span><span class="b">Nielsen #9 Error Recovery; WCAG 3.3.1, 3.3.3</span></div>
+<div class="c-tr"><span class="a">Text contrast 4.5:1 or better</span><span class="b">WCAG 1.4.3; contrast checked from hex values (4.8:1 to 14.7:1)</span></div>
+<div class="c-tr"><span class="a">One filled action, sticky</span><span class="b">Nielsen #8 Aesthetic and Minimalist Design</span></div>
+</div></div></div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Decision 4 · Microcopy</span>
+<h2 class="c-h2">Before vs. improved.</h2>
+<p class="c-intro">Legacy copy tells people something failed. Improved copy says what happened, that their data is safe, and what to do next. The “before” lines are typical legacy patterns, not quotes from the data.</p>
+</div>
+<div class="c-table"><div class="c-tr c-tr3 c-th"><span>Where</span><span>Before</span><span>Improved</span></div>
+<div class="c-tr c-tr3"><span class="a">Card decline</span><span>Error 402: Transaction failed.</span><span class="b">Your bank declined this card. No charge was made. Try another card, or contact your bank. Your order details are saved.</span></div>
+<div class="c-tr c-tr3"><span class="a">Expired promo</span><span>Invalid coupon.</span><span class="b">This code expired on [date]. Your cart is unchanged.</span></div>
+<div class="c-tr c-tr3"><span class="a">Cost drawer</span><span>Order summary</span><span class="b">Your total, before you pay</span></div>
+<div class="c-tr c-tr3"><span class="a">Pay button</span><span>Submit</span><span class="b">Pay $87.23 securely</span></div>
+<div class="c-tr c-tr3"><span class="a">Confirming</span><span>(blank spinner)</span><span class="b">Confirming your payment. This can take a few seconds. Please keep this page open.</span></div>
+</div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Decision 5 · Recovery assistant</span>
+<h2 class="c-h2">A bot that never guesses.</h2>
+<p class="c-intro">When a card is declined, a promo fails or someone asks where their order is, the assistant answers from the payment gateway, the promo engine and the order system only. It does not invent policies or delivery dates, offers one-tap chips instead of typing, and hands off to a person when it cannot answer.</p>
+</div>
+<div class="c-cards c3"><div class="c-card"><span class="c-tag" style="color:#B07A10">Card decline</span><h3>Stays calm, keeps the cart</h3><p>Explains the decline without blame, confirms the cart and details are saved, and offers another card, a wallet or help.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">Promo error</span><h3>Specific reason, no reset</h3><p>Says whether the code is expired or ineligible, confirms the cart is unchanged, and offers current offers.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">Order tracking</span><h3>Only what the system knows</h3><p>Reports carrier, last scan and expected dates. If tracking is unavailable it says so and offers support.</p></div></div>
+</section>
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#B07A10">Takeaways</span>
+<h2 class="c-h2">What I would tell the next designer.</h2>
+
+</div>
+<div class="c-cards c2"><div class="c-card"><span class="c-tag" style="color:#B07A10">Reflection</span><h3>What I learned</h3><p>Fixing a checkout is mostly about information timing and state, not screens. The biggest wins came from deciding when a number appears and what survives a tap, which only shows up when you treat the interface as a system.</p></div><div class="c-card"><span class="c-tag" style="color:#B07A10">Next steps</span><h3>What I would do next</h3><p>Test the five-step flow and the “confirming” state with real users, confirm the state-store hypothesis with engineering, and measure whether the early cost drawer reduces drop-off. None of that has been validated yet.</p></div></div>
+</section>
+<section class="c-sec">
+<a href="counselpod.html" class="c-next" style="background:#1F3A56;color:#FFFFFF">
+<div class="c-next-copy"><span class="c-eyebrow" style="color:#E3A125">Next case study</span><span class="n">CounselPod</span><span class="d">A compliance dashboard lawyers can run hands-free.</span></div>
+<span class="c-next-go" style="background:#E3A125"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+</section>
+<footer class="home-footer c-footer">
+  <div class="footer-bottom">
+    <span>© 2026 Shams · Mississauga, ON</span>
+    <span class="c-foot-links"><a href="index.html#work">All work</a><a href="mailto:syaradua@gmail.com">syaradua@gmail.com</a></span>
+  </div>
+</footer>
+<script src="assets/nav.js" defer></script>
+</body>
+</html>
