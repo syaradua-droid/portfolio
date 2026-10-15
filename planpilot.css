@@ -1,0 +1,93 @@
+/* PlanPilot page-only styles. Loaded after home.css and case.css; reuses their --h-* tokens. */
+html { scroll-behavior: smooth; }
+.pp-page .c-sec, .pp-page .pp-anchor-target { scroll-margin-top: 9rem; }
+
+/* Anchor nav (sits under the sticky site nav) */
+.pp-anchors { position: sticky; top: var(--nav-h, 80px); z-index: 40; background: rgba(251,250,247,.94); backdrop-filter: blur(10px); border-bottom: 1px solid var(--h-border); }
+.pp-anchors ul { list-style: none; margin: 0 auto; padding: 0 2rem; max-width: 1200px; display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none; }
+.pp-anchors ul::-webkit-scrollbar { display: none; }
+.pp-anchors a { display: block; padding: .85rem .9rem; font-size: .95rem; font-weight: 600; color: var(--h-text-muted); text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent; }
+.pp-anchors a:hover { color: var(--h-ink); }
+.pp-anchors a.on { color: var(--h-ink); border-bottom-color: #C2410C; }
+
+/* Hero extras */
+.pp-cta { display: inline-flex; align-items: center; gap: .5rem; min-height: 48px; padding: .75rem 1.4rem; border-radius: 999px; background: #FF9468; color: #142722; font-weight: 700; text-decoration: none; width: fit-content; }
+.pp-cta:hover { opacity: .92; }
+.pp-note { font-size: .95rem; opacity: .75; }
+.pp-herofig { margin: 1rem 0 0; }
+.pp-herofig .pp-shot { box-shadow: 0 30px 60px -30px rgba(0,0,0,.6); border-color: #35574B; }
+.pp-herofig figcaption { color: #B9CCC3; }
+
+/* Screenshots */
+.pp-shot { border: 1px solid #D6D0C4; border-radius: 14px; overflow: hidden; background: #fff; }
+.pp-shot img { display: block; width: 100%; height: auto; }
+.pp-shot.narrow { max-width: 340px; }
+.pp-shot.phone { max-width: 300px; }
+.pp-fig { margin: 0; display: grid; gap: .75rem; min-width: 0; }
+.pp-fig figcaption { font-size: .95rem; line-height: 1.5; color: var(--h-text-dim); max-width: 60ch; }
+
+/* Heard -> did */
+.pp-pairs { background: #fff; border: 1.5px solid #E1DCD1; border-radius: 18px; overflow: hidden; }
+.pp-pairs-head, .pp-pair { display: grid; grid-template-columns: 1fr 1fr; }
+.pp-pairs-head span { padding: .9rem 1.6rem; font-size: .8rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--h-text-dim); background: #F3F6F3; }
+.pp-pair { border-top: 1px solid #E1DCD1; }
+.pp-pair > div { padding: 1.3rem 1.6rem; font-size: 1.06rem; line-height: 1.55; min-width: 0; }
+.pp-pair .heard { color: var(--h-text-muted); border-right: 1px solid #E1DCD1; }
+
+/* Process */
+.pp-chain { display: flex; flex-wrap: wrap; gap: .6rem; list-style: none; margin: 0; padding: 0; }
+.pp-chain li { flex: 1 1 150px; padding: 1rem; background: #fff; border: 1.5px solid #E1DCD1; border-radius: 14px; font-weight: 700; text-align: center; }
+.pp-chain small { display: block; font-weight: 400; color: var(--h-text-dim); font-size: .85rem; margin-top: .2rem; }
+
+/* Decisions */
+.pp-dec { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.15fr); gap: clamp(1.5rem,4vw,3.5rem); align-items: start; padding-top: 3rem; border-top: 1px solid #E1DCD1; }
+.pp-dec:first-of-type { border-top: 0; padding-top: 0; }
+.pp-dec h3 { margin: 0 0 1rem; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(1.5rem,2.6vw,1.9rem); font-weight: 700; line-height: 1.15; letter-spacing: -.02em; }
+.pp-prd { display: grid; gap: .9rem; margin: 0; }
+.pp-prd div { display: grid; grid-template-columns: 5.5rem minmax(0,1fr); gap: .75rem; }
+.pp-prd dt { font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #C2410C; padding-top: .3rem; }
+.pp-prd dd { margin: 0; font-size: 1.06rem; line-height: 1.55; color: var(--h-text-muted); }
+.pp-media { display: grid; gap: 1.25rem; min-width: 0; }
+.pp-duo { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.25rem; align-items: start; }
+
+/* Before / after */
+.pp-ba-row { display: grid; gap: 1.25rem; padding-top: 2.5rem; border-top: 1px solid #E1DCD1; }
+.pp-ba-row:first-of-type { border-top: 0; padding-top: 0; }
+.pp-ba-row h3 { margin: 0; font-size: 1.5rem; font-weight: 700; }
+.pp-ba { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; align-items: stretch; }
+.pp-tag { display: inline-block; width: fit-content; font-size: .78rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; padding: .25rem .7rem; border-radius: 999px; }
+.pp-tag.before { background: #FDEEE6; color: #9A3412; }
+.pp-tag.after { background: #E3F1EA; color: #1F6A4A; }
+.pp-before-card { background: #fff; border: 1.5px dashed #C9C2B4; border-radius: 14px; padding: 1.4rem; display: grid; gap: .8rem; align-content: start; }
+.pp-before-card ul { margin: 0; padding-left: 1.15rem; display: grid; gap: .5rem; color: var(--h-text-muted); }
+
+/* Outcome */
+.pp-learned ul { margin: 0; padding-left: 1.15rem; display: grid; gap: .6rem; max-width: 62ch; font-size: 1.1rem; line-height: 1.55; color: var(--h-text-muted); }
+.pp-learned h3 { margin: 0 0 .8rem; font-size: 1.3rem; font-weight: 700; }
+.pp-card ul, .pp-card ol { margin: 0; padding-left: 1.15rem; display: grid; gap: .55rem; color: var(--h-text-muted); font-size: 1.04rem; line-height: 1.5; }
+
+/* Feedback */
+.pp-feedback { background: #142722; color: #fff; border-radius: 24px; padding: 3rem; display: grid; gap: 1.25rem; }
+.pp-feedback h2 { margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: clamp(1.8rem,3.4vw,2.6rem); line-height: 1.1; letter-spacing: -.02em; }
+.pp-feedback p { margin: 0; max-width: 56ch; font-size: 1.12rem; line-height: 1.55; color: #D4E2DB; }
+.pp-feedback ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .5rem; font-size: 1.1rem; color: #fff; }
+.pp-feedback .row { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; }
+.pp-feedback .small { font-size: .92rem; color: #9FB8AC; }
+.pp-feedback a.alt { color: #fff; font-weight: 600; }
+
+/* Next-project card colours */
+.pp-next { background: #14121C; color: #fff; }
+
+@media (max-width: 820px) {
+  .pp-dec { grid-template-columns: 1fr; }
+  .pp-media { order: -1; }
+  .pp-duo, .pp-ba { grid-template-columns: 1fr; }
+  .pp-pairs-head { display: none; }
+  .pp-pair { grid-template-columns: 1fr; }
+  .pp-pair .heard { border-right: 0; border-bottom: 1px dashed #E1DCD1; }
+  .pp-anchors { top: 0; position: static; }
+  .pp-anchors ul { padding: 0 1.25rem; }
+  .pp-feedback { padding: 2rem 1.5rem; }
+  .pp-prd div { grid-template-columns: 1fr; gap: .15rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

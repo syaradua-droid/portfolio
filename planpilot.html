@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlanPilot — Case study · Shams Yar-Adua</title>
+<meta name="description" content="A concept phone-plan finder that shows the full 24-month cost before someone signs, and says so plainly when a plan is oversized or over budget.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PlanPilot — Case study · Shams Yar-Adua">
+<meta property="og:description" content="A concept phone-plan finder that shows the full 24-month cost before someone signs, and says so plainly when a plan is oversized or over budget.">
+<meta property="og:image" content="https://syaradua-droid.github.io/portfolio/assets/og-planpilot.png">
+<meta property="og:url" content="https://syaradua-droid.github.io/portfolio/planpilot.html">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PlanPilot — Case study · Shams Yar-Adua">
+<meta name="twitter:description" content="A concept phone-plan finder that shows the full 24-month cost before someone signs, and says so plainly when a plan is oversized or over budget.">
+<meta name="twitter:image" content="https://syaradua-droid.github.io/portfolio/assets/og-planpilot.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="case.css">
+<link rel="stylesheet" href="planpilot.css">
+</head>
+<body class="home-page case-page pp-page">
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">Shams<span>.</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html#work">All work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="mailto:syaradua@gmail.com" class="btn-pill">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="c-hero" style="background:#142722;color:#FFFFFF">
+<div class="c-inner">
+<span class="c-eyebrow" style="color:#FF9468">Concept project · Fictional plans and prices</span>
+<h1 class="c-title" style="font-family:'Bricolage Grotesque', sans-serif;--ts:88px">PlanPilot</h1>
+<p class="c-lede">A phone-plan finder that shows the full 24-month cost before someone signs, and says so plainly when a plan is bigger than they need or over budget.</p>
+<a class="pp-cta" href="https://hungry-cel-07593222.figma.site" target="_blank" rel="noopener">Try the prototype <span aria-hidden="true">↗</span></a>
+<span class="pp-note">Plans, prices and providers are invented. Nothing here is real pricing.</span>
+<div class="c-meta"><div class="c-meta-cell" style="border-color:#35574B"><span class="k" style="color:#FF9468">Role</span><span class="v">Solo designer</span></div><div class="c-meta-cell" style="border-color:#35574B"><span class="k" style="color:#FF9468">Type</span><span class="v">Self-initiated concept</span></div><div class="c-meta-cell" style="border-color:#35574B"><span class="k" style="color:#FF9468">Tools</span><span class="v">Figma Make, Figma</span></div><div class="c-meta-cell" style="border-color:#35574B"><span class="k" style="color:#FF9468">Output</span><span class="v">Working prototype, 5-step flow</span></div></div>
+<figure class="pp-fig pp-herofig"><div class="pp-shot"><img src="assets/pp_results.webp" width="1375" height="746" alt="PlanPilot results screen: three plan cards with 24-month costs, and a banner saying all three run above the $80 monthly target."></div><figcaption>Results for 25 GB, $80 a month, calling the US and India. The cost over 24 months is the biggest number on each card.</figcaption></figure>
+</div>
+</header>
+
+<nav class="pp-anchors" aria-label="On this page">
+  <ul>
+    <li><a href="#problem">Problem</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#decisions">Decisions</a></li>
+    <li><a href="#before-after">Before &amp; after</a></li>
+    <li><a href="#outcome">Outcome</a></li>
+    <li><a href="#feedback">Feedback</a></li>
+  </ul>
+</nav>
+
+<section class="c-sec" id="problem">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">Problem</span>
+<h2 class="c-h2">The price you see is not the price you pay.</h2>
+<p class="c-intro">People choose a phone plan by its monthly price, and the real cost arrives later. Price step-ups, device payments, fees and calling-home charges hide behind that number. Shoppers can't see what a phone and plan will cost over time, or whether the plan fits how they use it.</p>
+</div>
+<p class="c-intro" style="margin-top:-1rem">I see this first-hand in customer-facing retail work in telecom. The pattern repeats: the rep explains, the customer nods, and the surprise shows up on the next bill.</p>
+<blockquote class="c-quote" style="border-color:#C2410C"><p>The trust damage comes from the interaction, not from customer error.</p><span class="who">Design thesis</span></blockquote>
+</section>
+
+<section class="c-sec">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">From conversations to design</span>
+<h2 class="c-h2">What I heard, and what I did about it.</h2>
+<p class="c-intro">These come from informal conversations in my day-to-day work, not a formal study.</p>
+</div>
+<div class="pp-pairs">
+<div class="pp-pairs-head" aria-hidden="true"><span>What I heard</span><span>Design response</span></div>
+<div class="pp-pair"><div class="heard">Price is the first concern. Phone plus plan often runs well past what people expect.</div><div><strong>24-month true cost</strong> as the biggest number on every card, with the monthly average beneath it.</div></div>
+<div class="pp-pair"><div class="heard">Calling family abroad matters a lot, especially for newcomers.</div><div>A country picker in the quiz, a covered or not covered line on every plan, and an overage estimate when a country is missing.</div></div>
+<div class="pp-pair"><div class="heard">Data is oversold. Plans offer far more than people use.</div><div><strong>Fit labels</strong> ("About 2.5x the data you use") and a plain warning on oversized plans.</div></div>
+<div class="pp-pair"><div class="heard">People fear lock-in.</div><div>Contract term and exit cost shown up front and in the compare table.</div></div>
+<div class="pp-pair"><div class="heard">People forget what the rep said.</div><div>A one-page <strong>"What you agreed to" recap</strong> to save or share.</div></div>
+<div class="pp-pair"><div class="heard">Some people buy the phone separately and bring their own plan, but that plan steps up in price over time.</div><div><strong>Path compare</strong>: bundle against bring-your-own-device, over 24 months.</div></div>
+</div>
+</section>
+
+<section class="c-sec" id="process">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">Process</span>
+<h2 class="c-h2">A precise spec did more than clever prompting.</h2>
+<p class="c-intro">I built the working prototype in Figma Make, following a beginner course for the tool, then treated the output as a first draft to critique.</p>
+</div>
+<div class="c-cards c2">
+<div class="c-card"><span class="c-tag" style="color:#C2410C">Spec first</span><p>I wrote the cost rules down before asking for changes: how the 24-month cost is calculated, how plans are ranked and how each label is chosen. Every change ended with a pass or fail check, such as "for 25 GB, $80, calling the US and India, Glide 40 shows $2,037."</p></div>
+<div class="c-card"><span class="c-tag" style="color:#C2410C">Reviewed in rounds</span><p>Seven rounds, one screen at a time, checking accuracy, hierarchy and honesty. Early rounds fixed logic. Later rounds fixed trust: budget status, right-sizing, the gap chart.</p></div>
+<div class="c-card"><span class="c-tag" style="color:#C2410C">Checked outside the tool</span><p>I recomputed the key totals independently, so what the screens show is what the rules produce.</p></div>
+<div class="c-card"><span class="c-tag" style="color:#C2410C">Tried the spec twice</span><p>I ran the same final prompt in a duplicate file. The results came out close, which suggests the spec mattered more than the tool.</p></div>
+</div>
+<ol class="pp-chain" aria-label="Process in four steps">
+<li>Spec<small>rules and pass/fail checks</small></li><li>Build<small>Figma Make</small></li><li>Review<small>7 rounds</small></li><li>Check<small>numbers recomputed</small></li>
+</ol>
+</section>
+
+<section class="c-sec" id="decisions">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">Key decisions</span>
+<h2 class="c-h2">Six choices that made the tool trustworthy.</h2>
+</div>
+
+<article class="pp-dec">
+<div><h3>Say so when nothing fits the budget</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>In the default scenario all three best matches run above the $80 target. Hiding that makes the tool look better and the user trust it less.</dd></div>
+<div><dt>Decision</dt><dd>Each card states "$X/mo over your target" or "Within your target". A banner appears when every match is over, and names the closest one.</dd></div>
+<div><dt>Why</dt><dd>The tool's promise is no surprises. A tool that bends that promise to look friendly breaks it.</dd></div>
+</dl></div>
+<figure class="pp-fig pp-media"><div class="pp-shot"><img src="assets/pp_budget_banner.webp" width="1075" height="375" loading="lazy" alt="Banner reading all three matches run above your $80 monthly target, the closest is Glide 40 at $5 over, above three plan cards."></div><figcaption>Glide 40 is the closest match, $5 over the $80 target, and the banner says so.</figcaption></figure>
+</article>
+
+<article class="pp-dec">
+<div><h3>Right-size the data, don't celebrate big plans</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>Retail plans lead with big data numbers. A 90 GB plan for a 25 GB user feels like a deal and costs more.</dd></div>
+<div><dt>Decision</dt><dd>Every plan gets a ratio-based label: short, right-sized, room to grow, or "About N.Nx the data you use". I also added a mid-range plan so the shortlist could include a realistic fit.</dd></div>
+<div><dt>Why</dt><dd>Early versions ranked only oversized plans. That taught me the data set was part of the design problem.</dd></div>
+</dl></div>
+<figure class="pp-fig pp-media"><div class="pp-shot narrow"><img src="assets/pp_oversized.webp" width="355" height="570" loading="lazy" alt="Glide 90 plan card with a warning that it offers about 3.6 times the data the user needs."></div><figcaption>Glide 90 gives a 25 GB user about 3.6x the data they use, and the card says that.</figcaption></figure>
+</article>
+
+<article class="pp-dec">
+<div><h3>Put a number on the calling trade-off</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>A cheaper plan can miss a country the user calls. The sticker price hides the cost of that gap.</dd></div>
+<div><dt>Decision</dt><dd>The alternate card shows plan cost, an estimated overage (60 minutes a month to each missing country) and an all-in total. It appears only when its plan cost beats the best match, and says which plan is cheaper once calling is counted.</dd></div>
+<div><dt>Why</dt><dd>The user compares on equal terms, and the labelled assumption keeps the estimate from reading as a promise.</dd></div>
+</dl></div>
+<figure class="pp-fig pp-media"><div class="pp-shot"><img src="assets/pp_alternate_card.webp" width="1065" height="275" loading="lazy" alt="Alternate option card for Northwave Clear 30: plan cost $1,862, estimated calling overage about $936, all-in $2,798."></div><figcaption>Clear 30 costs $1,862 but misses India. With about $936 of calling overage, Glide 40 is $761 cheaper.</figcaption></figure>
+</article>
+
+<article class="pp-dec">
+<div><h3>A chart that answers one question</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>The first path chart plotted two near-identical rising lines. It couldn't answer "which is cheaper, and when?"</dd></div>
+<div><dt>Decision</dt><dd>I plotted the difference between the two paths over 24 months, with the axis fitted to the data, a plain headline and a direction row ("Above $0: BYOD costs more"). A Total spend tab keeps the raw view. When totals are within 3%, a verdict line says the paths cost about the same and what differs is when you pay.</dd></div>
+<div><dt>Why</dt><dd>Total-spend lines hide the story. The gap shows the cross-over, which is what changes someone's decision.</dd></div>
+</dl></div>
+<div class="pp-media">
+<figure class="pp-fig"><div class="pp-shot"><img src="assets/pp_path_glide40.webp" width="1375" height="746" loading="lazy" alt="Difference chart for Glide 40: bring-your-own-device saves up to $67 around month 6 and ends $23 more expensive at month 24."></div><figcaption>BYOD saves up to $67 around month 6 and ends $23 more expensive.</figcaption></figure>
+<figure class="pp-fig"><div class="pp-shot phone"><img src="assets/pp_path_mobile.webp" width="469" height="1038" loading="lazy" alt="The same difference chart at phone width, with the Same cost label left-aligned and clear of the +$23 point."></div><figcaption>At 390px, "Same cost" stays on the left and clear of the +$23 point.</figcaption></figure>
+</div>
+</article>
+
+<article class="pp-dec">
+<div><h3>Color means one thing</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>Highlighting every different row in green made green meaningless.</dd></div>
+<div><dt>Decision</dt><dd>Neutral shading for "different". Green only for "lowest", plus a text tag ("Lowest") so color is never the only signal.</dd></div>
+<div><dt>Why</dt><dd>Meaning shouldn't depend on color alone, and a color that means one thing is faster to scan.</dd></div>
+</dl></div>
+<figure class="pp-fig pp-media"><div class="pp-shot"><img src="assets/pp_compare_table.webp" width="1375" height="746" loading="lazy" alt="Compare table for three plans: neutral Different chips on rows that vary, and a green Lowest tag on the lowest exit cost."></div><figcaption>Different rows get a neutral chip. Only the lowest exit cost, $160, is green and tagged "Lowest".</figcaption></figure>
+</article>
+
+<article class="pp-dec">
+<div><h3>Polish that people notice</h3>
+<dl class="pp-prd">
+<div><dt>Problem</dt><dd>On the charts, data points were drawn as stretched ovals because the chart scales to fit its container. On a phone, the compare table gave no sign that it scrolled sideways.</dd></div>
+<div><dt>Decision</dt><dd>Lines stay in the scalable chart. The dots became separate round elements placed on top at the same positions. On mobile the table keeps its first column pinned, lets the next plan peek in and shows a swipe hint.</dd></div>
+<div><dt>Why</dt><dd>Small distortions make a data tool feel less exact, and exactness is the point of this one.</dd></div>
+</dl></div>
+<div class="pp-media">
+<figure class="pp-fig"><div class="pp-shot" style="max-width:275px"><img src="assets/pp_dot_crop.webp" width="275" height="163" loading="lazy" alt="Close-up of one chart data point, a perfect circle on the line."></div><figcaption>A chart point after the fix: a round dot, shown at 9x zoom.</figcaption></figure>
+<figure class="pp-fig"><div class="pp-shot phone"><img src="assets/pp_compare_mobile.webp" width="469" height="1038" loading="lazy" alt="Compare table at phone width: pinned first column, Sky 80 in full and part of Glide 40 visible, with a swipe hint above."></div><figcaption>At 390px, the first column stays pinned and Glide 40 peeks in beside Sky 80.</figcaption></figure>
+</div>
+</article>
+</section>
+
+<section class="c-sec" id="before-after">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">Before and after</span>
+<h2 class="c-h2">The first generated version, next to the final.</h2>
+</div>
+
+<div class="pp-ba-row">
+<h3>Path chart</h3>
+<div class="pp-ba">
+<div class="pp-before-card"><span class="pp-tag before">Before</span><ul><li>Two lines almost on top of each other</li><li>A stretched-oval dot on every point</li><li>One sentence about "around month 17"</li></ul></div>
+<figure class="pp-fig"><span class="pp-tag after">After</span><div class="pp-shot"><img src="assets/pp_path_glide40.webp" width="1375" height="746" loading="lazy" alt="Final difference chart for Glide 40 with headline, direction row and labelled values."></div><figcaption>A gap chart with a plain headline, a direction row, labelled values and a "Biggest gap" marker, plus a Total spend tab with round dots.</figcaption></figure>
+</div>
+</div>
+
+<div class="pp-ba-row">
+<h3>Results</h3>
+<div class="pp-ba">
+<div class="pp-before-card"><span class="pp-tag before">Before</span><ul><li>Three cards with a cost and a generic "covers your needs" line</li><li>No budget status</li><li>No fit labels, no alternate card</li></ul></div>
+<figure class="pp-fig"><span class="pp-tag after">After</span><div class="pp-shot"><img src="assets/pp_results.webp" width="1375" height="746" loading="lazy" alt="Final results screen with budget banner and three plan cards."></div><figcaption>Budget status on every card, a banner when all matches run over, fit labels, oversize warnings and the calling trade-off card.</figcaption></figure>
+</div>
+</div>
+
+<div class="pp-ba-row">
+<h3>Compare table and plan detail</h3>
+<div class="pp-ba">
+<figure class="pp-fig"><span class="pp-tag after">After: compare</span><div class="pp-shot"><img src="assets/pp_compare_table.webp" width="1375" height="746" loading="lazy" alt="Final compare table with neutral Different chips and a green Lowest tag."></div><figcaption>Before: every different row highlighted the same way. Now neutral for "different", green and a "Lowest" tag only for the lowest value.</figcaption></figure>
+<figure class="pp-fig"><span class="pp-tag after">After: plan detail</span><div class="pp-shot"><img src="assets/pp_detail.webp" width="1375" height="746" loading="lazy" alt="Plan detail hero for Glide 40 with chips for room to grow, calling to India and United States, and $5 a month over the target."></div><figcaption>Before: a plain hero with just the cost. Now hero chips for fit, calling and budget status.</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="c-sec" id="outcome">
+<div class="c-sec-head">
+<span class="c-eyebrow" style="color:#C2410C">Outcome</span>
+<h2 class="c-h2">What it does, what it doesn't prove, what I'd test next.</h2>
+</div>
+<div class="c-cards c3">
+<div class="c-card pp-card"><h3>Achieved</h3><ul><li>A complete, working flow, from needs quiz to a shareable recap.</li><li>Every number on screen traces back to a written rule.</li><li>The tool says so when a plan is oversized, over budget or missing a country.</li></ul></div>
+<div class="c-card pp-card"><h3>Limits</h3><ul><li>It's a concept with invented plans. Nothing here is real pricing.</li><li>The insights come from my own retail conversations, not a formal study.</li><li>No usability testing yet, so I can't claim the design works for real shoppers.</li></ul></div>
+<div class="c-card pp-card"><h3>Next</h3><ol><li>Whether people understand the gap chart without help (five-second test, then think-aloud).</li><li>Whether the recap changes how well people remember what they agreed to.</li><li>Whether the over-budget banner changes which plan people pick.</li></ol></div>
+</div>
+<div class="pp-learned"><h3>What I learned</h3><ul>
+<li>A precise, testable spec gets better work out of a generation tool than clever prompting.</li>
+<li>The data you design with is part of the design. A shortlist full of oversized plans looks like a UI problem and is a content problem.</li>
+<li>Honesty is a design feature. Each time I chose clarity over a flattering number, the product got better.</li>
+</ul></div>
+</section>
+
+<section class="c-sec" id="feedback">
+<div class="pp-feedback">
+<span class="c-eyebrow" style="color:#FF9468">Play with it, then tell me</span>
+<h2>Try the prototype and give me your first reaction.</h2>
+<p>This is early, informal feedback, not a usability study. It helps me decide what to fix first. Open the prototype, run the default scenario, then answer whichever you like:</p>
+<ol>
+<li>Open the "Path compare" chart for Glide 40. In five seconds, what does it tell you?</li>
+<li>Where did you hesitate or feel unsure?</li>
+<li>What number or label did you not trust?</li>
+</ol>
+<div class="row">
+<a class="pp-cta" href="https://hungry-cel-07593222.figma.site" target="_blank" rel="noopener">Try the prototype <span aria-hidden="true">↗</span></a>
+<a class="alt" href="mailto:syaradua@gmail.com?subject=PlanPilot%20feedback&body=1.%20Path%20compare%20chart%2C%20first%205%20seconds%3A%0A%0A2.%20Where%20I%20hesitated%3A%0A%0A3.%20What%20I%20did%20not%20trust%3A%0A">Send feedback by email →</a>
+</div>
+<span class="small">Replies go to my inbox only. Please don't include anything personal; the plans and prices in the prototype are fictional.</span>
+</div>
+</section>
+
+<section class="c-sec">
+<a href="index.html#work" class="c-next pp-next" style="background:#14121C;color:#FFFFFF">
+<div class="c-next-copy"><span class="c-eyebrow" style="color:#FF9468">More work</span><span class="n">All case studies</span><span class="d">CounselPod, GameMind, GloveWorks and TuneVault.</span></div>
+<span class="c-next-go" style="background:#FF9468"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#142722" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+</section>
+
+<footer class="home-footer c-footer">
+  <div class="footer-bottom">
+    <span>© 2026 Shams · Mississauga, ON</span>
+    <span class="c-foot-links"><a href="index.html#work">All work</a><a href="mailto:syaradua@gmail.com">syaradua@gmail.com</a></span>
+  </div>
+</footer>
+<script src="assets/nav.js" defer></script>
+<script>
+(function(){
+  try{
+    var nav=document.querySelector('.site-nav');
+    var setH=function(){document.documentElement.style.setProperty('--nav-h',nav.offsetHeight+'px');};
+    setH();window.addEventListener('resize',setH);
+  }catch(e){}
+  try{
+    var links=[].slice.call(document.querySelectorAll('.pp-anchors a'));
+    var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(l){l.classList.remove('on');});var a=map[e.target.id];if(a)a.classList.add('on');}
+    });},{rootMargin:'-30% 0px -60% 0px'});
+    Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
